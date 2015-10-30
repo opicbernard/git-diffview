@@ -1,18 +1,25 @@
 #!/bin/bash
+
 case $# in
-	0)	from="HEAD"; to="HEAD~" ;;
-	1)	from="HEAD"; to=$1 ;;
-	2)	from=$1;     to=$2 ;;
-	*)	printf "To view changes between two paths:\nusage: git diffview [<path> [<path>]]\n"; exit 1;;
+    0)	from="HEAD"; to="HEAD~" ;;
+    1)	from="HEAD"; to=$1 ;;
+    2)	from=$1;     to=$2 ;;
+    *)	printf "To view changes between two paths:\nusage: git diffview [<path> [<path>]]\n"; exit 1;;
 esac
-	
+
 temp_dir=$(mktemp -d)
-git diff --name-only $from $to | while read name ; do
-	mkdir -p $temp_dir/$name
-done
+
+git diff --name-status $from $to | {
+    while read name ; do
+        status=$(echo "$name" | awk '{print $1}')
+        filename=$(echo "$name" | awk '{$1=""; sub(/^  */,"", $0); print }')
+
+        mkdir -p "$temp_dir/$filename $status"
+    done
+}
 
 cd $temp_dir
-tree * | head -n -1
+tree --noreport *
 cd - > /dev/null
 rm -rf $temp_dir
 
