@@ -43,18 +43,7 @@ Using the git dialect, this will correspond to what changed between HEAD, and HE
 
 This is what **git diffview** will show you by default.
 
-```code
-user@dev:~/project [master]$ git diffview↲
-root
-├── node-A
-│   ├── node-B
-│   │   ├── leaf-1
-│   │   └── leaf-2
-│   └── node-C
-│       └── leaf-3
-└── node-D
-    └── leaf-4
-```
+![git-diffview](git-diffview.png)
 
 In the above resulting treeview, you'll easily see that some work has 
 been done on leaf-1, leaf-2, leaf-3, and leaf-4, under the root 
