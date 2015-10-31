@@ -1,3 +1,6 @@
+<div style="float: right; margin-top: 10px;">
+	[![The GNU General Public License v3.0](http://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl.html)
+</div>
 # git-diffview
 A bash script to show the changes between two git paths as a treeview.
 
