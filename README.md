@@ -1,4 +1,6 @@
 # git-diffview
+[![GNU General Public License v3.0](https://img.shields.io/badge/license-GNU%20GPL%20v3.0-green.png)](https://raw.githubusercontent.com/opicbernard/git-diffview/master/LICENSE.md)
+
 A bash script to show the changes between two git paths as a treeview.
 
 ## Installation
@@ -43,7 +45,7 @@ Using the git dialect, this will correspond to what changed between HEAD, and HE
 
 This is what **git diffview** will show you by default.
 
-![git-diffview](git-diffview.png)
+![git-diffview](https://raw.githubusercontent.com/opicbernard/git-diffview/master/git-diffview.png)
 
 In the above resulting treeview, you'll easily see that some work has 
 been done on leaf-1, leaf-2, leaf-3, and leaf-4, under the root 
