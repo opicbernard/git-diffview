@@ -10,6 +10,9 @@ sudo curl https://raw.githubusercontent.com/opicbernard/git-diffview/master/git-
 sudo chmod +x /usr/local/bin/git-diffview
 ```
 
+Please note that this script requires the git, curl, and tree packages 
+to be installed to function properly.
+
 ## Usage
 
 ```code
