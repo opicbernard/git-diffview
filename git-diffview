@@ -1,9 +1,9 @@
 #!/bin/bash
 
 case $# in
-    0)	from="HEAD"; to="HEAD~" ;;
-    1)	from="HEAD"; to=$1 ;;
-    2)	from=$1;     to=$2 ;;
+    0)	from="HEAD~"; to="HEAD" ;;
+    1)	from=$1;      to="HEAD" ;;
+    2)	from=$1;      to=$2 ;;
     *)	printf "To view changes between two paths:\nusage: git diffview [<path> [<path>]]\n"; exit 1;;
 esac
 

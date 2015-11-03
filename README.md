@@ -38,7 +38,7 @@ git dv [<path> [<path>]]
 Let's suppose that you just pulled the changes from a git repository,
 and would like to know what happened between the two last commits.
 
-Using the git dialect, this will correspond to what changed between HEAD, and HEAD~.
+Using the git dialect, this will correspond to what changed between HEAD~, and HEAD.
 
 | HEAD~  | | HEAD | | HEAD~ | | HEAD | 
 | :--: | ---- | :--: | ---- | :--: | ---- | :--: |
@@ -64,5 +64,5 @@ Each of these parameters can be a commit reference (HEAD, or SHA-1
 based), or a branch name, as in the **git diff** command.
 
 For example, use **git diffview HEAD~2** for the changes between 
-commits n and n-2, or **git diffview HEAD~2 HEAD~4** for those between 
-commits n-2, and n-4.
+commits n-2 and n, or **git diffview HEAD~4 HEAD~2** for those between 
+commits n-4, and n-2.
