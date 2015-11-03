@@ -50,9 +50,9 @@ This is what **git diffview** will show you by default.
 
 ![git-diffview](https://raw.githubusercontent.com/opicbernard/git-diffview/master/git-diffview.png)
 
-In the above resulting treeview, you'll easily see that some work has 
-been done on leaf-1, leaf-2, leaf-3, and leaf-4, under the root 
-directory in the master branch of the project.
+In the above resulting treeview, you'll easily see that leaf-1, leaf-3, 
+and leaf-4 have been modified, and leaf-2 deleted, under the root 
+directory in the project's master branch.
 
 It's now straigthforward to visualize what part of the project tree get 
 touched.
