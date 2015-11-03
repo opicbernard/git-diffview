@@ -43,8 +43,7 @@ Using the git dialect, this will correspond to what changed between HEAD~, and H
 | HEAD~  | | HEAD | | HEAD~ | | HEAD | 
 | :--: | ---- | :--: | ---- | :--: | ---- | :--: |
 | ⭣ | .... | ⭣ | _&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;&nbsp;_ | ⭣ | .... | ⭣ |
-| previous | | last | | commit | | commit |
-| commit | | commit | | n-1 | | n |
+| previous<br>commit | | last<br>commit | | commit<br>n-1 | | commit<br>n |
 
 This is what **git diffview** will show you by default.
 
