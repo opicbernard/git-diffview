@@ -63,5 +63,5 @@ Each of these parameters can be a commit reference (HEAD, or SHA-1
 based), or a branch name, as in the **git diff** command.
 
 For example, use **git diffview HEAD~2** for the changes between 
-commits n-2 and n, or **git diffview HEAD~4 HEAD~2** for those between 
+commits n-2 and n, or **git diffview HEAD\~4 HEAD\~2** for those between 
 commits n-4, and n-2.
